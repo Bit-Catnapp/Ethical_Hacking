@@ -45,7 +45,7 @@ Cybersecurity enthusiast focused on OSINT, Web Security, Networking, and CTF Cha
   <tr>
     <td valign="top">
       <ul>
-        <li>Google Dorking</li>
+        <li>OSINT(Open Source Intelligence) Dorking</li>
         <li>Metadata Analysis</li>
         <li>WHOIS &amp; IP History</li>
         <li>FOFA Searches</li>
