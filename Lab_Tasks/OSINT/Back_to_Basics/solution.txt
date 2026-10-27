@@ -1,0 +1,3 @@
+Vulnerability: Dorking
+Search: site:fhi.no filetype:pdf intitle:smittevern
+Flag: 4164

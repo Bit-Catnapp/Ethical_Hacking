@@ -1,0 +1,6 @@
+Vulnerability: Dorking
+Search: site:*.kommune.no inurl:wp-admin
+	site:*.kommune.no inurl:wp-login.php
+	site:*.kommune.no inurl:administrator/index.php
+Flag: hadsel
+

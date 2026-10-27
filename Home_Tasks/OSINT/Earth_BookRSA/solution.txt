@@ -1,0 +1,20 @@
+Task: Earth Book/RSA
+Description
+There is a presentation document on stortinget.no. The objective is to identify the email address of the document creator.
+Flag format:FLAG{ivar}
+
+Vulnerability Discovery
+Type: OSINT (Open-Source Intelligence)
+The following Google dork was used to locate the relevant file:
+site:ntnu.no filetype:(xlsx OR xls) "Earth Book" RSA
+An Excel file matching the search criteria was identified and downloaded. The file was reviewed to verify its legitimacy, and the document metadata confirmed that the owner information was associated with the challenge.
+
+Vulnerability Explanation
+The vulnerability stems from Google Dorking, where search engines index publicly accessible files that can be discovered using advanced search operators.
+To reduce the number of search results and locate the correct document efficiently, the search query was constructed using clues provided in the task description:
+•	File type: .xlsx or .xls
+•	Phrase: "Earth Book"
+•	Keyword: RSA
+The OR operator was included to ensure that both Excel file formats were considered. This approach minimized the risk of overlooking relevant documents and ensured comprehensive search coverage.
+In this case, the query returned only a single result, which was the correct file. Analysis of the document metadata provided the information necessary to complete the challenge.
+The vulnerability demonstrates how publicly indexed documents can be discovered and analyzed by unauthorized parties when appropriate access controls or indexing restrictions are not in place. Sensitive metadata, such as document ownership information, may therefore be exposed through search engine results.

@@ -1,0 +1,15 @@
+Task: Presentation
+Description
+There is a presentation DOC on stortinget.no, can you find the email of the document creator?
+Flag format:FLAG{ bjorn.steine@stortinget.no}
+
+Vulnerability Discovery
+Initial OSINT Search
+•	site:stortinget.no filetype:docx presentation
+•	site:stortinget.no "Steine Bjørn Arne" mail
+A Word document was identified and downloaded for analysis. The document was examined to verify its legitimacy, confirm that it contained no security risks, and validate the document owner's name. After identifying the author, a second search was conducted within the stortinget.no domain using the author's name as a search parameter. This process led to the discovery of the associated email address.
+
+Vulnerability Explanation
+The website is susceptible to Google Dorking, allowing publicly accessible information to be discovered through carefully crafted search engine queries.
+To reduce the number of results and increase search precision, the search parameters were refined based on clues provided in the task description. Filters such as filetype:docx and keywords including presentation and mail were used. This search revealed a document containing metadata that exposed the author's name. A subsequent OSINT search using the identified name as a search parameter within the same domain enabled the retrieval of the target email address (the flag).
+This demonstrates how publicly available documents and metadata can unintentionally expose sensitive information, which can then be leveraged through OSINT techniques to gather additional details about individuals and organizations.

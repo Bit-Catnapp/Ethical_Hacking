@@ -1,0 +1,16 @@
+Task: Linkedin Hacker
+Description
+There is a hacker on Linkedin who is from Norway doing penetration testing on ICS and SCADA and work on OT security and was affiliated with NTNU, can you find his name?
+Flag{FirstNameOnly}
+
+Vulnerability Discovery
+Type: OSINT (Open-Source Intelligence)
+The following Google Dork was used to identify the target individual's LinkedIn profile:
+•	site:linkedin.com/in/ Norway "penetration testing" ("ICS & SCADA" and "OT security" and NTNU)
+The search was refined using industry-specific keywords obtained from the challenge description. Restricting the search to LinkedIn profile pages using site:linkedin.com/in/ eliminated unrelated results such as company pages, articles, and job advertisements.
+By combining the keywords penetration testing, ICS & SCADA, OT security, and NTNU, the search results were narrowed sufficiently to identify the correct LinkedIn profile as the first result. The information contained within the profile was then used to complete the challenge.
+
+Vulnerability Explanation
+The vulnerability is based on OSINT and Google Dorking, where publicly available information can be identified through advanced search engine queries.
+Although the target's identity was not directly disclosed, enough information was publicly available to create a highly specific search query. By correlating multiple unique attributes, including educational background, technical specialization, and industry expertise, it was possible to identify the individual through publicly indexed LinkedIn data.
+This demonstrates how seemingly harmless pieces of information can be combined to reveal personal details and facilitate further intelligence gathering about individuals and organizations.
